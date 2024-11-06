@@ -13,3 +13,5 @@ const storeSchema = new Schema({
 });
 
 const Store = mongoose.model('Store', storeSchema);
+
+export default Store;

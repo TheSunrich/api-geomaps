@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "La Zona Tec",
+      "description": "Tienda de tecnología y gadgets de última generación.",
+      "latitude": 21.1522,
+      "longitude": -101.7115,
+      "address": "Av. Tecnológico 123, Col. Centro, León, Gto.",
+      "phone": "+52 (477) 123-4567",
+      "email": "contacto@lazonatec.com"
+    },
+    {
+      "id": 2,
+      "name": "Librería Central",
+      "description": "Librería con una gran selección de libros y cafetería.",
+      "latitude": 21.1214,
+      "longitude": -101.6837,
+      "address": "Calle Madero 456, Zona Centro, León, Gto.",
+      "phone": "+52 (477) 234-5678",
+      "email": "info@libreriacentral.com"
+    },
+    {
+      "id": 3,
+      "name": "El Jardín Verde",
+      "description": "Vivero y tienda de jardinería con plantas y accesorios.",
+      "latitude": 21.1257,
+      "longitude": -101.6908,
+      "address": "Blvd. Campestre 789, Col. Jardines, León, Gto.",
+      "phone": "+52 (477) 345-6789",
+      "email": "ventas@eljardinverde.com"
+    },
+    {
+      "id": 4,
+      "name": "Gimnasio Fuerza León",
+      "description": "Gimnasio y centro de bienestar con el mejor equipo.",
+      "latitude": 21.1325,
+      "longitude": -101.6578,
+      "address": "Blvd. López Mateos 101, Col. San Isidro, León, Gto.",
+      "phone": "+52 (477) 456-7890",
+      "email": "info@fuerzaleon.com"
+    },
+    {
+      "id": 5,
+      "name": "Mascotas Felices",
+      "description": "Tienda de artículos para mascotas y servicios de aseo.",
+      "latitude": 21.1367,
+      "longitude": -101.6810,
+      "address": "Av. Hidalgo 202, Col. Obregón, León, Gto.",
+      "phone": "+52 (477) 567-8901",
+      "email": "soporte@mascotasfelices.com"
+    }
+  ]
+  

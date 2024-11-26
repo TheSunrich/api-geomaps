@@ -1,39 +1,10 @@
 import { Schema, Model, model } from 'mongoose';
 
-/*
-brand
-storeNumber
-StoreName
-ownership
-type
-street
-address
-city
-state
-country
-postcode
-phone
-timezone
-longitude
-latitude
-
-
-
-
-
-
-
-
-
-
-* */
-
 interface IStore {
     brand: string
     storeNumber: string
     storeName: string
     ownershipType: string
-    street: string
     city: string
     state: string
     country: string
@@ -56,7 +27,6 @@ const StoreSchema: Schema = new Schema<IStore, StoreModel, StoreMethods>({
     storeNumber: { type: String, required: true },
     storeName: { type: String, required: true },
     ownershipType: { type: String, required: true },
-    street: { type: String, required: true },
     city: { type: String, required: true },
     state: { type: String, required: true },
     country: { type: String, required: true },

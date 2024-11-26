@@ -1,23 +1,21 @@
 import { Schema, Model, model } from 'mongoose';
 
 /*
-Brand
-Store
-Number
-Store
-Name
-Ownership
-Type
-Street
-Address
-City
-State/Province
-Country
-Postcode
-Phone Number
-Timezone
-Longitude
-Latitude
+brand
+storeNumber
+StoreName
+ownership
+type
+street
+address
+city
+state
+country
+postcode
+phone
+timezone
+longitude
+latitude
 
 
 
@@ -31,13 +29,21 @@ Latitude
 * */
 
 interface IStore {
-    name: string;
-    description: string;
-    latitude: number;
-    longitude: number;
+    brand: string
+    storeNumber: string
+    storeName: string
+    ownershipType: string
+    street: string
+    city: string
+    state: string
+    country: string
+    postcode: string
     address: string;
     phone: string;
     email: string;
+    timezone: string
+    latitude: number;
+    longitude: number;
 }
 
 interface StoreMethods {
@@ -46,13 +52,21 @@ interface StoreMethods {
 
 type StoreModel = Model<IStore, {}, StoreMethods>
 const StoreSchema: Schema = new Schema<IStore, StoreModel, StoreMethods>({
-    name: { type: String, required: true },
-    description: { type: String, required: true },
-    latitude: { type: Number, required: true },
-    longitude: { type: Number, required: true },
+    brand: { type: String, required: true },
+    storeNumber: { type: String, required: true },
+    storeName: { type: String, required: true },
+    ownershipType: { type: String, required: true },
+    street: { type: String, required: true },
+    city: { type: String, required: true },
+    state: { type: String, required: true },
+    country: { type: String, required: true },
+    postcode: { type: String, required: true },
     address: { type: String, required: true },
     phone: { type: String, required: true },
     email: { type: String, required: true },
+    timezone: { type: String, required: true },
+    latitude: { type: Number, required: true },
+    longitude: { type: Number, required: true },
 });
 
 StoreSchema.method('distance', function(this: IStore, lat: number, lon: number):number{

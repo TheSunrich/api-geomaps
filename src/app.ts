@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 3000;
 
 // Configurar y usar cors
 app.use(cors({
-  origin: 'http://localhost:8100' // Reemplaza con el dominio permitido
+  origin: '*' // Reemplaza con el dominio permitido
 }));
 
 
